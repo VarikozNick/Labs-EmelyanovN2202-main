@@ -1,0 +1,61 @@
+/* Основные стили для body */
+body {
+    background: #1abca1;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #333;
+}
+
+/* Стили для заголовка первого уровня с шрифтом с засечками */
+h1 {
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Стили для таблицы */
+table {
+    border-collapse: collapse;
+    width: 100%; /* Ширина таблицы 100% экрана */
+}
+
+/* Стили для ячеек таблицы */
+table tr td {
+    padding: 5px;
+    border: 1px solid #ea1a1a; /* Добавляем границы для таблицы */
+}
+
+/* Стили для заголовков таблицы */
+table th {
+    border: 1px solid #333; /* Добавляем границы для заголовков таблицы */
+    padding: 5px;
+}
+
+/* Стили для параграфов и заголовков четвертого уровня */
+p, h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/* Стили для заголовков четвертого уровня */
+h4 {
+    font-size: 16px; /* Изменяем размер шрифта для подзаголовков */
+}
+
+/* Стили для списков */
+ul, ol {
+    margin: 0;
+}
+
+/* Стили для изображений */
+img {
+    height: 30px; /* Высота изображения 30px */
+    width: 30px; /* Ширина также 30px для квадратного изображения */
+    display: block;
+    margin: 0 auto 20px auto; /* Центрирование и отступ снизу */
+    border: 2px solid #e2d8d8; /* Белая рамка для контраста */
+    border-radius: 4px; /* Скругленные углы */
+}
+
+/* Стили для шапки */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}

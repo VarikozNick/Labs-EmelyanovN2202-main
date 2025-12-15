@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Архив статей</title>
+    <!-- Подключаем CSS файл -->
+    <link rel="stylesheet" href="/static/article.css">
+</head>
+<body>
+    <!-- Шапка страницы с логотипом -->
+    <div class="header">
+        <img src="/static/logo.png" alt="Логотип блога">
+    </div>
+    
+    <!-- Основной контент - архив статей -->
+    <div class="archive">
+        <!-- Цикл для отображения всех статей -->
+        <!-- В Django шаблонах используется свой синтаксис для циклов -->
+        {% for post in posts %}
+        <div class="one-post">
+            <!-- Заголовок статьи -->
+            <h2 class="post-title">{{ post.title }}</h2>
+            
+            <!-- Информация об авторе и дате создания -->
+            <div class="article-info">
+                <div class="article-author">{{ post.author.username }}</div>
+                <div class="article-created-date">{{ post.created_date }}</div>
+            </div>
+            
+            <!-- Краткий текст статьи (первые 140 символов) -->
+            <p class="article-text">{{ post.get_excerpt }}</p>
+        </div>
+        <!-- Разделитель между статьями (кроме последней) -->
+        {% if not forloop.last %}
+        <hr>
+        {% endif %}
+        {% endfor %}
+    </div>
+</body>
+</html>

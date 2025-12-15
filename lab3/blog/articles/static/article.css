@@ -1,0 +1,82 @@
+/* Основные стили для body */
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Стили для шапки */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Стили для изображений */
+img {
+    height: 30px; /* Высота изображения 30px */
+    width: 30px; /* Ширина также 30px для квадратного изображения */
+    display: block;
+    margin: 0 auto 20px auto; /* Центрирование и отступ снизу */
+    border: 2px solid #e2d8d8; /* Белая рамка для контраста */
+    border-radius: 4px; /* Скругленные углы */
+}
+
+/* Стили для контейнера архива */
+.archive {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Стили для одной статьи */
+.one-post {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Стили для заголовка статьи */
+.post-title {
+    color: #ffffff;
+    margin-top: 0;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+/* Стили для контейнера информации об авторе и дате */
+.article-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+/* Стили для имени автора */
+.article-author {
+    font-weight: bold;
+}
+
+/* Стили для даты создания */
+.article-created-date {
+    font-style: italic;
+}
+
+/* Стили для текста статьи */
+.article-text {
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+/* Стили для горизонтальной линии */
+hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 20px 0;
+}
